@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pages/Panels</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    
+    <!--Navbar setup-->
+
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+    <a class="navbar-brand" href="index.html">Panels/<span class="text-warning">Pages</span></a>
+    
+        <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item ms-auto">
+                <a href="page2.html" class="nav-link">Favorites</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    </nav>
+        
+    <!--Header-->
+
+    <section class="bg-dark text-light p-0 text-center">
+        <div class="container d-flex align-items-center">
+            <div class="flex-lg-row">
+                <div>
+                <h1>Panels/<span class="text-warning">Pages</span>
+                </h1>
+            </div>
+                <img class="img-fluid w-50 p-2" src="./Photos/Comic_collage_2.jpg" alt="A comic panel collage"/><br>
+                <p class="my-4">
+                    Panels/Pages is an archive for your favorite comics, a place for you to save and share your reccomendations,
+                    and a place to share your thoughts on releases, new and old.
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--Sign up form-->
+
+    <section class="bg-secondary-subtle text-dark p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-content-center">
+                <h3 class="mb-3 mb-md-0">Join the Curators</h3>
+                <div class="input-group">
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Send Recomendation!" 
+                    aria-label=" Recipient's Email" 
+                    aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
+                  </div>
+                  
+            </div>
+        </div>
+    </section>
+
+    <!--Grid Section with thumbnails-->
+
+    <section class="p-5">
+        <div class="container ">
+            <div class="row text-center">
+                <div class="col-md">
+                    <h2>Featured</h2>
+                    <p class="card-img-top">
+                        Money is a book that answers, "What if everything you've heard about the Illuminati were true?" 
+                        A satisfying series opener that will have you waiting for more. 
+                    </p>
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <img src="./Photos/Money.jpg" alt="Money" class="img-thumbnail">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.amazon.com/Money-Comixology-Originals-Curt-Pires-ebook/dp/B0BRNYGDD1" target="_blank" class="btn btn-primary mt-3">Buy Now</a>
+                </div>
+                <div class="col-md">
+                    <h2>Now Reading</h2>
+                    <p class="card-img-bottom">
+                        Nostalgia is exactly what it is, a dive into a dystopian future starring a washed up 
+                        rockstar that learns of family he never knew he had. Am exestential, Fincher-esque thriller. 
+                    </p>
+                    <img src="./Photos/Nostalgia.jpg" alt="Nostalgia" class="img-thumbnail">
+                    <a href="https://www.amazon.com/Nostalgia-Comixology-Originals-Scott-Hoffman-ebook/dp/B0BWSCKK69/ref=sr_1_1?crid=1EMC0MG0MKD7O&keywords=nostalgia+comic&qid=1691453301&s=comics-manga&sprefix=nostalgia+comic%2Ccomics-manga%2C89&sr=1-1" 
+                    target="_blank" class="btn btn-primary mt-3">Buy Now</a>
+                </div>
+                <div class="col-md">
+                    <h2>Backlog</h2>
+                    <p class="card-img-bottom">
+                        Alan Moore is a master. A must read in his catalogue is 1985's Swamp Thing, for fans of 
+                        horror, monsters, and the human condition. One of Moore's most esteemed works.
+                    </p>
+                    <img src="./Photos/SwampThing.jpg" alt="Swamp Thing" class="img-thumbnail">
+                    <a href="https://www.amazon.com/Saga-Swamp-Thing-Book-1/dp/1401220835/ref=asc_df_1401220835/?tag=hyprod-20&linkCode=df0&hvadid=312154637207&hvpos=&hvnetw=g&hvrand=7376975081949071915&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001823&hvtargid=pla-434632974956&psc=1" 
+                    target="_blank" class="btn btn-primary mt-3">Buy Now</a>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html> 
