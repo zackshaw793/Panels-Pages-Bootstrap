@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panels & Pages</title>
+    <title>Panels/Pages</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body class="container">
@@ -12,25 +12,122 @@
     <!--Navbar setup-->
 
    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="container">
-    <a class="navbar-brand" href="index.html">A Comic Resource </a>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Panels/<span class="text-warning">Pages</span></a>
     
         <button class="navbar-toggler" 
             type="button" 
             data-bs-toggle="collapse"
-            data-bs-target="#navmenu">
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="collapse">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item ms-auto">
-                <a href="page2.html" class="nav-link">Favorites</a>
+                <a class="nav-link active" href="page2.html">Favorites</a>
             </li>
         </ul>
+
     </div>
     </div>
     </nav>
+
+    <div class="jumbotron bg-dark mb-3 text-center flex-wrap">
+        <h1 class="display-4 text-light">Recent <span class="text-warning"> Favorites</span></h1>
+        <p class="lead text-light">A brief list of our recommendations, from the editors.</p>
+        <hr class="my-4 text-bg-warning">
+        <p></p>
+      </div>
+
+    <!--Table of current, favorite reads-->
+
+    <table class="table mt-3 table-bordered table-striped table-sm">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col"><span class="text-warning">#</span></th>
+                <th scope="col">Book</th>
+                <th scope="col">Authors</th>
+                <th scope="col">Artists</th>
+                <th scope="col"><span class="text-warning">Rating</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Harrow County</th>
+                <td>Cullen Bunn</td>
+                <td>Tyler Crook</td>
+                <td>9.5/10</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Once & Future</th>
+                <td>Kieron Gillen</td>
+                <td>Dan Mora, Tamra Bonivillain</td>
+                <td>9/10</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Polarity</th>
+                <td>Max Bemis</td>
+                <td>Jorge Coelho</td>
+                <td>9/10</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Saga</th>
+                <td>Brian K. Vaughan</td>
+                <td>Fiona Staples</td>
+                <td>8.7/10</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>East of West</th>
+                <td>Jonathan Hickman</td>
+                <td>Nick Dragotta</td>
+                <td>9.3/10</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Paper Girls</th>
+                <td>Brian K. Vaughan</td>
+                <td>Cliff Chiang</td>
+                <td>8.5/10</td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>Something is Killing The Children</th>
+                <td>James Tynion IV</td>
+                <td>Werther Dell'Edera</td>
+                <td>9.5/10</td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td>The Sandman: Season of Mists</th>
+                <td>Neil Gaiman</td>
+                <td>Kelly Jones, Mike Dringenberg, Malcom Jones III, Matt Wagner, Dick Giordino, George Pratt, P. Craig Russell</td>
+                <td>9.9/10</td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td>The Wicked + The Devine</th>
+                <td>Kieron Gillen</td>
+                <td>Jamie McKelvie</td>
+                <td>8.3/10</td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td>Young Liars</th>
+                <td>David Lapham</td>
+                <td>David Lapham</td>
+                <td>9.5/10</td>
+            </tr>
+        </tbody>
+      </table>
